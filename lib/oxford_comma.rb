@@ -4,10 +4,7 @@ def oxford_comma(array)
   elsif array.count == 2
     array.join(" and ")
   elsif array.count == 3   #["kiwi", "durian", "starfruit"]
-    a = []
-    array.pop
-    a = array.join(", ") + << "and starfruit"
-    #array[0..2].join(", ") + " and " + array.pop
+    array[0..2].join(", ") + " and " + array.pop
   end
 end
 
